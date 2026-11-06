@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FRAME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf9d9a0b8b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!--this is for the nav bar-->
+    <header>
+
+        <nav>
+            <p class="logo"><span class="logo-f">F</span><sub>RAME</sub></p>
+            <div id="navbar">
+                <a href="#home" class="HASC">HOME</a>
+                <a href="#about" class="HASC">ABOUT</a>
+                <a href="#services" class="HASC">SERVICES</a>
+                <a href="#contact" class="HASC">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--this if for the main body-->
+    <main>
+
+        <!--this section belongs to home-->
+        <section id="home">
+            <div class="herosec">
+                <div class="herosect">
+                    <h1 class="herotitle">Every brand has a story.<br>
+                        We give it a <span class="aframe"> frame.</span>
+                    </h1>
+                    <p class="herostory">FRAME is a creative studio blending videography, design, and web development to
+                        help brands look,
+                        feel, and connect the way they were meant to.
+                    </p>
+                    <a href="#services" class="button">VIEW MY WORK <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-image-placeholder"></div>
+            </div>
+        </section>
+
+        <!--this section belongs to about-->
+        <section id="about">
+            <div class="aboutimage"></div>
+            <div class="about-text">
+                <span class="aboutheading">ABOUT</span>
+                <h4 class="wif">WHAT IS <span class="wiframe">FRAME</span>?</h4>
+                <p>Every brand has a moment before it's seen. an idea, a feeling, a story waiting for shape. That's
+                    where
+                    FRAME comes in.
+
+                    We're a creative studio built on one belief: how you're seen matters as much as what you say. So we
+                    work
+                    across video, design, and web not as separate services, but as one continuous craft of turning
+                    intention into something people actually feel.
+
+                    Whether it's a short film, a brand identity, or a website that finally feels like you, our job is
+                    the
+                    same: find the story, then frame it right.</p>
+                <h4 class="wdfd">WHAT DOES <span class="wdfdframe">FRAME </span>DO?</h4>
+                <p>FRAME started with a simple frustration: too many brands look like everyone else.
+
+                    We exist to fix that. Our team moves fluidly between the camera, the canvas, and the browser because
+                    the best brand experiences don't come from one discipline working alone, they come from all of them
+                    working together.
+
+                    The result isn't just content. It's a visual language your audience recognizes before they even read
+                    a
+                    word.</p>
+            </div>
+        </section>
+
+        <!--this section belongs to services-->
+        <section id="services">
+            <span class="serviceheading">SERVICES</span>
+            <div class="serv">
+                <div class="vidgra service-card">
+                    <div class="videoimageforservice"></div>
+                    <dl>
+                        <dt>VIDEOGRAPHY <i class="fa-solid fa-camera font-icon"></i></dt>
+                        <dd>We turn raw footage into stories that hold attention. Whether it's a brand film, social
+                            content, or promotional video, we craft each edit with intentional pacing, color, and sound
+                            to make sure your message lands — and stays with people.</dd>
+                    </dl>
+                </div>
+                <div class="webdev service-card">
+                    <div class="webimageforservice"></div>
+                    <dl>
+                        <dt>WEB DEVELOPMENT <i class="fa-solid fa-code font-icon"></i></dt>
+                        <dd>We build websites that do more than look good — they work. From clean, responsive layouts to
+                            smooth user experiences, we design and develop sites that reflect your brand and make it
+                            easy for people to engage, explore, and convert.</dd>
+                    </dl>
+                </div>
+                <div class="grades service-card">
+                    <div class="graphicimageforservice"></div>
+                    <dl>
+                        <dt>GRAPHIC DESIGN <i class="fa-solid fa-pen-nib font-icon" ></i></dt>
+                        <dd>We create visuals that give your brand a clear identity. From logos and brand systems to
+                            social and print design, we design with purpose — making sure everything you put out looks
+                            consistent, intentional, and unmistakably you.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!--this section belongs to contact-->
+        <section id="contact">
+            <span class="contactheading">CONTACT</span>
+            <div class="contact-card">
+                <section>
+                    <h4>Get in Touch</h4>
+                    <p>Feel free to reach out directly through any of the channels below.</p>
+
+                    <ul>
+                        <li><strong>Email:</strong> rufaihammed18@gmail.com</li>
+                        <li><strong>Phone:</strong> +234 8076337151</li>
+                        <li><strong>Location:</strong> Lagos, Nigeria</li>
+                    </ul>
+
+                    <div class="linkinstax">
+                        <a href="https://instagram.com/director_bigj" target="_blank" class="instel">Instagram</a>
+                        <a href="https://twitter.com/jrufai24" target="_blank" class="instel">Twitter/X</a>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Send a Message</h2>
+                    <div class="umustwork">
+                    <form class="sendmess" id="contact-form">
+                        <input type="text" name="user_name" placeholder="Your Name" required><br>
+                        <input type="email" name="user_email" placeholder="Your Email" required><br>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
+                        <button type="submit" id="senmes">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                    </div>
+                </section>
+            </section>
+            </div>
+
+    </main>
+
+    <!--this is for footer-->
+    <footer>
+        <p>FRAME Creative Studio © 2026 FRAME. All rights reserved.</p>
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram font-social"></i>
+            <i class="fa-brands fa-x-twitter font-social"></i>
+        </div>
+    </footer>
+    <button id="backtoup">
+        <i class="fa-solid fa-arrow-up buttonup"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>

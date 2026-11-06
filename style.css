@@ -1,0 +1,471 @@
+/*this is for the body*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+    padding: 0;
+    background-color: #0d1216;
+    color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+}
+    h1{
+    font-size: 45px;
+}
+
+/*this is for the nav bar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid none;
+    background-color: #0b1013;
+    height: 60px;
+    padding:0px 15px;
+    
+}
+
+/*this is for the div nav bar*/
+#navbar{
+    display: flex;
+    gap: 70px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+/*this is for the links*/
+.HASC{
+    text-decoration: none;
+    color: gray;
+}
+
+/*this is used to hover the links*/
+.HASC::after{
+    content:"";
+    display: block;
+    width: 100%;
+    background-color: aqua;
+    height: 1px;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    transform-origin: left;
+}
+
+.HASC:hover::after{
+    transform: scaleX(1);
+}
+
+.HASC:hover{
+color: white;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.logo-f{
+color: aqua;
+font-size: 30px;
+font-weight:bolder;
+font-style: italic;
+margin: 5px;
+border: 2px solid white;
+padding: 5px;
+}
+
+/*this is for the hero*/
+#home{
+   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  background-color:#0d1216 ;
+  overflow: hidden;
+  padding: 4rem 2rem; 
+}
+
+
+.herosec{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  row-gap: 20px;
+}
+
+.herotitle{
+ font-size: 40px;
+ width: 250px;
+}
+
+.aframe{
+    color:aqua;
+}
+
+.herostory{
+    font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  width:350px ;
+}
+
+  
+.button{
+  color:cyan;
+  text-decoration: none;
+  display: inline-flex;
+gap: 8px;
+align-items: center;
+justify-content: center;
+padding-left: 10px 22px;
+font-weight: bold;
+width:fit-content;
+margin-left: 90px;
+border-radius: 5px;
+border: 1px solid aqua;
+}
+
+.button:hover{
+    background-color: rgb(66, 85, 102);
+}
+
+.hero-image-placeholder{
+    background-image: url("hero2.jpg");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+width: 100%;
+border: 2px solid black;
+opacity: 0.7;
+}
+
+/*this is for the about section*/
+#about{
+    padding: 20px;
+    line-height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    grid-column: 2;
+}
+
+.wdfd{
+    margin-top: 50px;
+    font-size: small;
+}
+
+.wif{
+    font-size: small;
+}
+
+.aboutheading{
+    font-weight: bold;
+    color: aqua;
+}
+
+.about-text{
+    line-height: 22px;
+}
+
+.wiframe{
+    color: cyan;
+}
+
+.wdfdframe{
+    color:cyan;
+}
+
+.aboutimage{
+       background-image: url("frameaboutsecimg.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+width: 100%;
+border: 2px solid black;
+}
+
+/*this is for the services section*/
+
+.serviceheading{
+    font-weight: bold;
+    color: aqua;
+    margin-bottom: 15px;
+   
+}
+
+.serv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#services{
+   padding: 20px;
+    margin: 50px 0px;
+}
+
+.service-card{
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.8);
+    transition:  transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px; 
+    padding: 15px;  
+    border: 1px solid black;
+    margin-top: 20px;
+} 
+
+.service-card:hover{
+    transform: translate(8px, -5px); 
+      border-color:aqua;
+}
+
+dt{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.font-icon{
+    color: cyan;
+    font-size: large;
+}
+
+dd{
+    line-height: 20px;
+}
+
+.videoimageforservice{
+           background-image: url("frameimg2.jpg");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 100%;
+border: 2px solid black;
+}
+
+.webimageforservice{
+           background-image: url("frameimg3.jpg");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 100%;
+border: 2px solid black;
+}
+
+.graphicimageforservice{
+           background-image: url("frameimg4.png");
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 200px;
+width: 100%;
+border: 2px solid black;
+}
+
+/*this is for the contact section*/
+
+.contactheading{
+   font-weight: bold;
+    color: aqua;
+    margin-bottom: 30px;
+    display: block;
+}
+
+#contact{
+    padding: 20px;
+}
+
+.contact-card{
+    display: flex;
+    gap: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px;
+}
+
+.umustwork input,textarea{
+    padding: 15px;
+    width: 500px;
+    display: flex;
+    background-color: transparent;    
+    border: 1px solid gray;
+    color: white;
+}
+
+#senmes{
+    background-color: rgba(0, 0, 0, 0.3);
+color:aqua;
+Padding:10px;
+Border:1px solid black;
+Border-radius:10px;
+font-weight: bold;
+cursor: pointer;
+border: 1px solid aqua;
+width: 500px;
+}
+
+#senmes:hover{
+background-color:  rgb(66, 85, 102);
+}
+
+.form-status {
+    display: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Loading message */
+.form-status.loading {
+    display: flex;
+    color: aqua;
+    background-color: rgba(0, 255, 255, 0.08);
+}
+
+/* Spinning loader */
+.form-status.loading::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    border-top-color: aqua;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+/* Success message */
+.form-status.success {
+    display: block;
+    color: #00e676;
+    background-color: rgba(0, 230, 118, 0.08);
+}
+
+/* Error message */
+.form-status.error {
+    display: block;
+    color: #ff5252;
+    background-color: rgba(255, 82, 82, 0.08);
+}
+
+/* Spinner animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*this is for the footer section*/
+footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    margin-top: 100px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkinstax{
+    display: flex;
+    gap: 20px;
+}
+
+
+.instel {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.instel:hover {
+    background-color: rgb(66, 85, 102);
+    transition: 0.3s ease;
+        border: 1px solid aqua
+}
+
+.font-social{
+    font-size: larger;
+}
+
+.social-icon{
+    display: flex;
+    gap: 20px;
+}
+
+/*upbutton*/
+#backtoup{
+    position: fixed;
+    margin-right: 30px;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    border: none;
+    bottom: 50px;
+    right: 30px;
+    background-color: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;    
+}
+.buttonup{
+    color: cyan;
+    font-size: x-large;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+#navbar{
+    gap: 12px;
+}
+
+nav{
+    padding: 0 2px;
+    gap: 20px;
+}
+
+.herosec{
+    grid-template-columns:1fr;
+}
+
+.serv {
+    grid-template-columns: 1fr;
+}
+
+#about {
+    grid-template-columns: 1fr;
+}
+
+.contact-card {
+    flex-direction: column;
+}
+
+.umustwork input,
+.umustwork textarea,
+#senmes {
+    width: 100%;
+}
+
+}
